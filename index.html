@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="form">
+        <h1>Registration Form Example</h1>
+        <p>Thank you for taking time to complete this form.</p>
+        <form>
+    <!-- Contact Details -->
+            <fieldset class="first-section">
+                <legend>Contact Details</legend>
+                <label for="name">Name</label>
+                <input autofocus type="text" id="name" name="name" autofocus placeholder="John/Jane Doe" autocomplete="on" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="ahnotagain@gmail.com"><br><br>
+                <label for="tel">Phone</label>
+                <input type="tel" id="tel" placeholder="555-444-8888"><br><br>
+            </fieldset>
+    <!-- Personal Information -->
+            <fieldset class="second-section">
+                <legend>Personal Information</legend>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob"><br><br>
+                <label for="gender">Gender</label>
+                <datalist id="genders">
+                    <option value="female">
+                    <option value="male">
+                    <option value="other">
+                </datalist><br><br>
+                <div class="proficiency">
+                    <label for="proficiency">Proficiency</label>
+                    <input type="range" value="4" max="10" id="proficiency" name="proficiency">
+                </div>
+            </fieldset>
+    <!-- Preferred Language -->
+            <div class="terms">
+                <input type="checkbox" id="scales" name="scales" class="checkbox">
+                <label for="scales">I have read and agree to ther terms and conditions.</label>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
